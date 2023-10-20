@@ -64,5 +64,9 @@ public class Curso {
     @OneToMany(mappedBy = "curso")
     private List<Agenda> agendas;
 
+    // Relacionamento com professor
+    @ManyToMany(mappedBy = "curso")
+    private List<Professor> professors;
+
     
 }
